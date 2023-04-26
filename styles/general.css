@@ -1,0 +1,60 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-position: center;
+  background-size: cover;
+  color: white;
+}
+
+.card {
+  width: 380px;
+  height: 380px;
+  padding: 28px 30px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 25px;
+  border: 0.12em;
+  border-style: solid;
+  border-color: rgba(60, 60, 60, 0.386);
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: rgb(72, 72, 72);
+  width: 165px;
+  border-radius: 7px;
+  padding: 2px;
+  margin-top: -30px;
+  opacity: 0.88;
+}
+
+.hr-button, .day-button {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 24px;
+  cursor: pointer;
+}
+
+.hr-button {
+  background-color: white; 
+}
+
+.day-button {
+  background-color: rgb(72, 72, 72);
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.weather.loading {
+  visibility: hidden;
+}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="styles/general.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/current-weather.css">
+    <link rel="stylesheet" href="styles/forecast.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class = "weather loading">
+      <div class="card">
+        <div class="search">
+          <input type="text" class="search-bar" placeholder="Enter city name">
+          <div class = search-button-background>
+            <input class="search-button" type="image" src="icons/search-icon.png"></button>
+          </div>
+        </div>
+        <div class="current-weather">
+          <div class="left-section">
+            <div class="city"></div>
+            <div class="temp"></div>
+            <div class="high-low-temp">
+              <div class="high-temp"></div>
+              <div class="low-temp"></div>
+            </div>
+          </div>
+          <div class="right-section">
+            <img src="" alt="" class="sec2-icon">
+            <div class="description"></div>
+          </div>
+        </div>
+        <div class="button-container">
+          <div class="buttons">
+            <button class="hr-button" onclick="getHourlyForecast()">Hourly</button>
+            <button class="day-button" onclick="getDailyForecast()">Daily</button>
+          </div>
+        </div>
+        <div class="forecast">
+          <div class="container">
+            <div id = "container1-time" class="time"></div>
+            <img id = "container1-icon" src="" alt="" class="container-icon">
+            <div id = "container1-temp" class="container-temp"></div>
+          </div>
+          <div class="container">
+            <div id = "container2-time" class="time"></div>
+            <img id = "container2-icon" src="" alt="" class="container-icon">
+            <div id = "container2-temp" class="container-temp"></div>
+          </div>
+          <div class="container">
+            <div id = "container3-time" class="time"></div>
+            <img id = "container3-icon" src="" alt="" class="container-icon">
+            <div id = "container3-temp" class="container-temp"></div>
+          </div>
+          <div class="container">
+            <div id = "container4-time" class="time"></div>
+            <img id = "container4-icon" src="" alt="" class="container-icon">
+            <div id = "container4-temp" class="container-temp"></div>
+          </div>
+          <div class="container">
+            <div id = "container5-time" class="time"></div>
+            <img id = "container5-icon" src="" alt="" class="container-icon">
+            <div id = "container5-temp" class="container-temp"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
